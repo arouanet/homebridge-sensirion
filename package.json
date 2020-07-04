@@ -2,8 +2,10 @@
   "name": "homebridge-sensirion",
   "version": "1.0.0",
   "description": "Homebridge plugin for indoor air quality, temperature, and humidity monitoring using Sensirion sensors",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/arouanet/homebridge-sensirion/issues"
   },
-  "homepage": "https://github.com/arouanet/homebridge-sensirion#readme"
+  "homepage": "https://github.com/arouanet/homebridge-sensirion#readme",
+  "devDependencies": {
+    "@types/node": "^10.17.27",
+    "typescript": "^3.9.6"
+  }
 }
