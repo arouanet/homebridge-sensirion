@@ -4,9 +4,10 @@
   "description": "Homebridge plugin for indoor air quality, temperature, and humidity monitoring using Sensirion sensors",
   "main": "dist/index.js",
   "scripts": {
+    "lint": "eslint .",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
   },
   "devDependencies": {
     "@types/node": "^10.17.27",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
     "typescript": "^3.9.6"
   }
 }
