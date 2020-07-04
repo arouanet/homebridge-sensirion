@@ -25,7 +25,11 @@
   "engines": {
     "homebridge": ">=1.0.0"
   },
+  "dependencies": {
+    "i2c-bus": "^5.2.0"
+  },
   "devDependencies": {
+    "@types/i2c-bus": "^5.1.0",
     "@types/node": "^10.17.27",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
