@@ -21,6 +21,9 @@
     "url": "https://github.com/arouanet/homebridge-sensirion/issues"
   },
   "homepage": "https://github.com/arouanet/homebridge-sensirion#readme",
+  "engines": {
+    "homebridge": ">=1.0.0"
+  },
   "devDependencies": {
     "@types/node": "^10.17.27",
     "typescript": "^3.9.6"
